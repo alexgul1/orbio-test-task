@@ -18,7 +18,6 @@ export const focusesFilterSlice = createSlice({
   initialState,
   reducers: {
     setFocusFilter: (state, action: PayloadAction<number>) => {
-      console.log(action)
       state.isActive = action.payload !== -1
       state.type = action.payload
     },

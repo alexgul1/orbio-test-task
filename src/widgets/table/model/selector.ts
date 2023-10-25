@@ -2,32 +2,21 @@ import { createSelector } from "@reduxjs/toolkit"
 import { astrologersWithSearchFilter } from "@features/search/model/slice"
 import { astrologersWithFocusFilter } from "@features/focuses-filter/model/slice"
 import { Astrologer } from "@entities/astrologers/model/types"
+import { astrologersWithSpecializationFilter } from "@features/specializations-filter/model/slice"
 
 export const astrologersWithAppliedFiltersSelector = createSelector(
   astrologersWithSearchFilter,
   astrologersWithFocusFilter,
-  (
-    astrologers1: Array<Astrologer>,
-    astrologers2: Array<Astrologer>,
-  ): Array<Astrologer> => {
-    console.log(astrologers1, astrologers2)
+  astrologersWithSpecializationFilter,
+  (...astrologersList): Array<Astrologer> => {
+    const commonIds = astrologersList.reduce(
+      (acc, array) => {
+        const ids = new Set(array.map((item) => item.id))
+        return new Set([...acc].filter((id) => ids.has(id)))
+      },
+      new Set(astrologersList[0].map((item) => item.id)),
+    )
 
-    const combinedItems = [...astrologers1, ...astrologers2]
-
-    // user_id is not unique identifier :(
-    const nonUniqueIds = new Set<Astrologer["id"]>()
-    const nonUniqueItems = new Map<Astrologer["id"], Astrologer>()
-
-    combinedItems.forEach((item) => {
-      if (nonUniqueIds.has(item.id)) {
-        nonUniqueItems.set(item.id, item)
-      } else {
-        nonUniqueIds.add(item.id)
-      }
-    })
-
-    console.log(nonUniqueIds, ...nonUniqueItems.values())
-
-    return [...nonUniqueItems.values()]
+    return astrologersList[0].filter((item) => commonIds.has(item.id))
   },
 )
