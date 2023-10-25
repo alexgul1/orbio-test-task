@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material"
 import { Search } from "@features/search/ui"
+import { FocusesFilter } from "@features/focuses-filter/ui"
 
 const theme = createTheme({
   typography: {
@@ -47,6 +48,7 @@ export const App = () => {
                 >
                   Astrologers
                 </Typography>
+                <FocusesFilter />
                 <Search />
               </Toolbar>
               <AstrologersTable />

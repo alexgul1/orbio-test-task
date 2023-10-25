@@ -9,10 +9,10 @@ import {
 } from "@mui/material"
 import { tableColumns } from "@widgets/table/lib"
 import { TableCellContainer } from "@shared/table-cell/ui/table-cell-container"
-import { astrologersWithSearchFilter } from "@features/search/model/slice"
+import { astrologersWithAppliedFiltersSelector } from "@widgets/table/model/selector"
 
 export const AstrologersTable = () => {
-  const astrologersList = useAppSelector(astrologersWithSearchFilter)
+  const astrologersList = useAppSelector(astrologersWithAppliedFiltersSelector)
 
   return (
     <TableContainer>
