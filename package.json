@@ -17,6 +17,10 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.15",
+    "@mui/x-data-grid": "^6.16.3",
     "@reduxjs/toolkit": "^1.8.1",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -46,6 +50,7 @@
     "prettier-config-nick": "^1.0.2",
     "typescript": "^5.0.2",
     "vite": "^4.0.0",
+    "vite-tsconfig-paths": "^4.2.1",
     "vitest": "^0.30.1"
   }
 }
