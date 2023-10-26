@@ -3,6 +3,7 @@ import {
   createSlice,
   type PayloadAction,
 } from "@reduxjs/toolkit"
+
 import { astrologersListSelector } from "@entities/astrologers/model/slice"
 import { RootState } from "@app/appStore"
 import { Astrologer } from "@entities/astrologers/model/types"

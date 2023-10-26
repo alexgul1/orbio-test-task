@@ -1,5 +1,6 @@
-import { useAppSelector } from "@app/hooks"
 import { Table, TableBody, TableContainer, TableRow } from "@mui/material"
+
+import { useAppSelector } from "@app/hooks"
 import { tableColumns } from "@widgets/table/lib"
 import { TableCellContainer } from "@shared/table-cell/ui/table-cell-container"
 import { sortedAstrologersWithFilters } from "@widgets/table/model/selector"

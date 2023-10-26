@@ -1,4 +1,5 @@
 import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit"
+
 import { astrologersListSelector } from "@entities/astrologers/model/slice"
 import { Astrologer, AstrologerFocus } from "@entities/astrologers/model/types"
 import { RootState } from "@app/appStore"

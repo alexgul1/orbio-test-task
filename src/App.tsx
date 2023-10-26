@@ -1,5 +1,4 @@
 import "./App.css"
-import { AstrologersTable } from "@widgets/table"
 import {
   Container,
   createTheme,
@@ -10,8 +9,9 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material"
-import { Search } from "@features/search/ui"
 
+import { AstrologersTable } from "@widgets/table"
+import { Search } from "@features/search/ui"
 import { useFilterRouteSubscription } from "@entities/router-navigation/lib/hooks"
 import { Filters } from "@widgets/filters/ui"
 
@@ -64,5 +64,3 @@ export const App = () => {
     </ThemeProvider>
   )
 }
-
-export default App

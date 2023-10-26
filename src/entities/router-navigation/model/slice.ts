@@ -1,7 +1,7 @@
 import { createSelector } from "@reduxjs/toolkit"
+
 import { RootState } from "@app/appStore"
 import { SearchParamsConfig } from "@entities/router-navigation/lib/searchParamsConfig"
-
 import { setStatusFilter } from "@features/status-filter/model/slice"
 import { setSearchValue } from "@features/search/model/slice"
 import { setSpecializationFilter } from "@features/specializations-filter/model/slice"

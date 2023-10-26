@@ -1,6 +1,7 @@
-import { dataParser } from "@widgets/table/lib"
 import { FC, useMemo } from "react"
 import { TableCell } from "@mui/material"
+
+import { dataParser } from "@widgets/table/lib"
 import { TableCellProps } from "@shared/table-cell/ui/table-cell-container"
 
 export const DefaultTableCell: FC<TableCellProps> = ({ astrologer, id }) => {

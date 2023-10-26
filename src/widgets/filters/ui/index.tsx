@@ -1,4 +1,5 @@
 import { Grid, Paper } from "@mui/material"
+
 import { StatusFilter } from "@features/status-filter/ui"
 import { SpecializationFilter } from "@features/specializations-filter/ui"
 import { FocusesFilter } from "@features/focuses-filter/ui"

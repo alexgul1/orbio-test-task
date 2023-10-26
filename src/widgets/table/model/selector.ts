@@ -1,4 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit"
+
 import { astrologersWithSearchFilter } from "@features/search/model/slice"
 import { astrologersWithFocusFilter } from "@features/focuses-filter/model/slice"
 import { Astrologer } from "@entities/astrologers/model/types"

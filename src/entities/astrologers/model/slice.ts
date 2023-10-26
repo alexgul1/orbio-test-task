@@ -1,7 +1,9 @@
-import mockData from "./mockData.json"
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
+
 import { RootState } from "@app/appStore"
 import { Astrologer } from "@entities/astrologers/model/types"
+
+import mockData from "./mockData.json"
 
 const initialState: { list: Array<Astrologer> } = {
   list: mockData.data,

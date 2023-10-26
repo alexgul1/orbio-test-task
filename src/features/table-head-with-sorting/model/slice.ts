@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
+
 import { RootState } from "@app/appStore"
 
 export type SortingType = "Default" | "Rating" | "OnlineChatPrice"

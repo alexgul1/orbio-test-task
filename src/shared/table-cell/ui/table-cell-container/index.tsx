@@ -1,8 +1,9 @@
+import { FC, useMemo } from "react"
+
 import { VisibleColumns } from "@widgets/table/lib"
 import { ImageTableCell } from "@shared/table-cell/ui/image-table-cell"
 import { DefaultTableCell } from "@shared/table-cell/ui/default-table-cell"
 import { Astrologer } from "@entities/astrologers/model/types"
-import { FC, useMemo } from "react"
 import { NameTableCell } from "@shared/table-cell/ui/name-table-cell"
 
 const TableCellComponents = {

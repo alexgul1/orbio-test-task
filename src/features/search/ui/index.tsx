@@ -1,7 +1,8 @@
 import { TextField } from "@mui/material"
+import { ChangeEvent, useCallback } from "react"
+
 import { setSearchValue } from "@features/search/model/slice"
 import { useAppDispatch } from "@app/hooks"
-import { ChangeEvent, useCallback } from "react"
 import { debounce } from "@features/search/lib/debounce"
 
 export const Search = () => {

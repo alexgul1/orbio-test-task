@@ -1,6 +1,8 @@
 import { TableCell, TableHead, TableRow } from "@mui/material"
-import { tableColumns } from "@widgets/table/lib"
 import TableSortLabel from "@mui/material/TableSortLabel"
+import { useCallback } from "react"
+
+import { tableColumns } from "@widgets/table/lib"
 import { useAppDispatch, useAppSelector } from "@app/hooks"
 import {
   changeSortDirection,
@@ -8,7 +10,6 @@ import {
   sortingStateSelector,
   SortingType,
 } from "@features/table-head-with-sorting/model/slice"
-import { useCallback } from "react"
 
 export const TableHeadWithSorting = () => {
   const dispatch = useAppDispatch()
