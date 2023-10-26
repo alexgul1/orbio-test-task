@@ -14,7 +14,7 @@ export const NameTableCell: FC<TableCellProps> = ({ astrologer, id }) => {
   )
 
   const removeAstrologerCallback = useCallback(
-    () => dispatch(removeAstrologer(astrologer.user_id)),
+    () => dispatch(removeAstrologer(astrologer.id)),
     [astrologer.user_id],
   )
 

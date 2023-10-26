@@ -20,7 +20,7 @@ export type Astrologer = {
   specializations: Array<AstrologerSpecialization>
   supply_type: AstrologerSupplyType
   chat_offers: Array<AstrologerChatOffer>
-  status: AstrologerStatus
+  status: string
 }
 
 export type AstrologerFocus = {
@@ -52,5 +52,3 @@ export type AstrologerChatOffer = {
   offer: null
   trial_minutes: number
 }
-
-export type AstrologerStatus = "offline" | "online"

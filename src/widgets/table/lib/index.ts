@@ -18,6 +18,8 @@ export const tableColumns = [
   {
     id: VisibleColumns.USER_ID,
     translation: "ID",
+    sortable: true,
+    sortType: "Default",
   },
   {
     id: VisibleColumns.IMAGE_MINI,
@@ -38,10 +40,14 @@ export const tableColumns = [
   {
     id: VisibleColumns.ONLINE_CHAT_OFFERS,
     translation: "Online chat price",
+    sortable: true,
+    sortType: "OnlineChatPrice",
   },
   {
     id: VisibleColumns.RATING,
     translation: "Rating",
+    sortable: true,
+    sortType: "Rating",
   },
   {
     id: VisibleColumns.FOCUSES,

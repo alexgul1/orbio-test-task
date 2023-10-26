@@ -1,29 +1,17 @@
 import { useAppSelector } from "@app/hooks"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material"
+import { Table, TableBody, TableContainer, TableRow } from "@mui/material"
 import { tableColumns } from "@widgets/table/lib"
 import { TableCellContainer } from "@shared/table-cell/ui/table-cell-container"
-import { astrologersWithAppliedFiltersSelector } from "@widgets/table/model/selector"
+import { sortedAstrologersWithFilters } from "@widgets/table/model/selector"
+import { TableHeadWithSorting } from "@features/table-head-with-sorting/ui"
 
 export const AstrologersTable = () => {
-  const astrologersList = useAppSelector(astrologersWithAppliedFiltersSelector)
+  const astrologersList = useAppSelector(sortedAstrologersWithFilters)
 
   return (
     <TableContainer>
       <Table>
-        <TableHead>
-          <TableRow>
-            {tableColumns.map(({ id, translation }) => (
-              <TableCell key={id}>{translation}</TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
+        <TableHeadWithSorting />
         <TableBody>
           {astrologersList.map((astrologer) => (
             <TableRow key={astrologer.id}>

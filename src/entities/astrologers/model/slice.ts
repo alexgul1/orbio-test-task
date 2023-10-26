@@ -11,9 +11,9 @@ export const astrologersSlice = createSlice({
   name: "astrologers",
   initialState,
   reducers: {
-    removeAstrologer: (state, action: PayloadAction<Astrologer["user_id"]>) => {
+    removeAstrologer: (state, action: PayloadAction<Astrologer["id"]>) => {
       const removeIndex = state.list.findIndex(
-        ({ user_id }) => user_id === action.payload,
+        ({ id }) => id === action.payload,
       )
 
       state.list.splice(removeIndex, 1)
