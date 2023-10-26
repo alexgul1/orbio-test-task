@@ -1,11 +1,20 @@
 # Orbio Test Task
 
+### <a href="https://orbio-test-task-hulitskyi.netlify.app/" target="_blank">Link to deployed site</a>
+
 ## Scripts
 
 - `dev`/`start` - start dev server and open browser
 - `build` - build for production
 - `preview` - locally preview production build
-- `test` - launch test runner
+
+## How to run
+
+1. Clone repo - `git clone https://github.com/alexgul1/orbio-test-task.git`
+2. Navigate to cloned repo via terminal - `cd orbio-test-task`
+3. Install deps - `yarn install`
+4. Run project: For dev mode - `yarn run dev` or for production build - `yarn run build && yarn run preview`
+5. Open site in browser - <a href="http://localhost:5173/" target="_blank">Link for dev mode</a> / <a href="http://localhost:4173/" target="_blank">Link for production mode</a>
 
 ## Inspiration
 
