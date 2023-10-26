@@ -12,8 +12,6 @@ import { appStore } from "@app/appStore"
 
 import { App } from "./App"
 
-import "./index.css"
-
 const router = createBrowserRouter(
   createRoutesFromElements(<Route path={"/"} element={<App />} />),
 )
