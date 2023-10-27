@@ -1,6 +1,6 @@
-# Orbio Test Task
+# Obrio Test Task
 
-### <a href="https://orbio-test-task-hulitskyi.netlify.app/" target="_blank">Link to deployed site</a>
+### <a href="https://obrio-test-task-hulitskyi.netlify.app/" target="_blank">Link to deployed site</a>
 
 ## Scripts
 
@@ -10,7 +10,7 @@
 
 ## How to run
 
-1. Clone repo - `git clone https://github.com/alexgul1/orbio-test-task.git`
+1. Clone repo - `git clone https://github.com/alexgul1/obrio-test-task.git`
 2. Navigate to cloned repo via terminal - `cd orbio-test-task`
 3. Install deps - `yarn install`
 4. Run project: For dev mode - `yarn run dev` or for production build - `yarn run build && yarn run preview`
